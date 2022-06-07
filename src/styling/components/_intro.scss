@@ -1,0 +1,73 @@
+@use "../core/mixins";
+
+.intro-container {
+    @include mixins.flex(row, center, flex-start, 70px);
+    padding: 80px 0px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.intro-text {
+    @include mixins.flex(column, flex-start, flex-start, 0px);
+    width: 45%;
+    line-height: 3.4rem;
+
+    .preamble {
+        color: #406054;
+        margin: 0px;
+        padding: 0px;
+        font-size: 3rem;
+        font-family: 'DM Serif Display', serif;
+    }
+
+    .link-style {
+        color: #406054;
+        font-weight: 600;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 5px 0px;
+        border-bottom: 1px solid #000;
+    }
+}
+
+.intro-image {
+    width: 50%;
+    position: relative;
+
+    .intro-image-top {
+        background-image: url("../../../public/images/mountains.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 600px;
+        width: auto;
+        z-index: 2;
+
+        img {
+            position: absolute;
+            bottom: -260px;
+            left: 400px;
+            z-index: -2;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.body-text-container {
+    padding: 30px 0px;
+
+    button {
+        @include mixins.btn();
+        margin: 30px 0px;
+    }
+}
+
+.body-text {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 8px 0px;
+}

@@ -1,0 +1,101 @@
+@use "../core/mixins";
+
+.cards-container {
+    @include mixins.flex(column, center, center, 0px);
+    width: 80%;
+    margin: 0 auto;
+    padding: 300px 0px 180px;
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .cards-text {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: 'DM Serif Display', serif;
+        background-color: #406054;
+        padding: 10px;
+    }
+}
+
+.cards {
+    @include mixins.flex(row, center, center, 0px);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.cards-item {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.cards-item.voyage {
+    background-image: url("../../../public/images/train.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 300px;
+}
+
+.cards-item.family {
+    background-image: url("../../../public/images/birds.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 300px;
+}
+
+.cards-item.culinary {
+    background-image: url("../../../public/images/wine.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 300px;
+}
+
+.cards-item.adventure {
+    background-image: url("../../../public/images/snorkling.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 300px;
+}
+
+.cards-item.luxe {
+    background-image: url("../../../public/images/pool.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 300px;
+}
+
+.cards-item.yoga {
+    background-image: url("../../../public/images/yoga.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 300px;
+}
+
+.cards-item.celebration {
+    background-image: url("../../../public/images/fireworks.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 300px;
+}
+
+.cards-item.all {
+    background-image: url("../../../public/images/giraffes.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 300px;
+}

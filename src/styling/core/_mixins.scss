@@ -1,0 +1,42 @@
+@use "../core/variables";
+
+// Tablet styling
+@mixin tablet-and-up {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+// Desktop styling
+@mixin desktop-and-up {
+    @media screen and (min-width: 1100px) {
+        @content;
+    }
+}
+
+// Flex
+@mixin flex($dir, $jc, $ai, $gap: 0px) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+}
+
+// Button
+@mixin btn($padding: 15px 17px, $fontsize: 1rem, $gap: 0px) {
+    padding: $padding;
+    text-transform: uppercase;
+    font-size: $fontsize;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    background-color: transparent;
+    border: 1px solid #000;
+
+    &:hover {
+        border: 1px solid#406054;
+        background-color: #406054;
+        color: #fff;
+    }
+}

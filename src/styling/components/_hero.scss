@@ -1,0 +1,81 @@
+@use "../core/mixins";
+
+.hero-container {
+    height: 70vh;
+    width: 100%;
+    @include mixins.flex(column, flex-start, center, 20px);
+
+    @include mixins.desktop-and-up {
+        @include mixins.flex(column, flex-start, center, 20px);
+        height: 100vh;
+    }
+
+    h2 {
+        padding: 120px 0px 0px;
+        text-align: center;
+        font-size: 2.3rem;
+        font-weight: 700;
+        color: #000;
+        font-family: 'DM Serif Display', serif;
+
+        @include mixins.desktop-and-up {
+            padding: 150px 0px 0px 130px;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+        }
+    }
+
+    .video-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+
+        @include mixins.desktop-and-up {
+            height: 100vh;
+            object-position: top center;
+        }
+    }
+
+    .hero-text {
+        @include mixins.flex(column, center, center, 20px);
+        z-index: 2;
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+
+        @include mixins.desktop-and-up {
+            @include mixins.flex(column, center, flex-start, 5px);
+        }
+    }
+
+    .hero-btns {
+        @include mixins.flex(row, flex-start, center, 15px);
+
+        @include mixins.desktop-and-up {
+            padding: 0px 0px 0px 130px;
+        }
+
+        .hero-btn {
+            button {
+                @include mixins.btn();
+                background-color: transparent;
+                border: 1px solid #000;
+            }
+        }
+
+        .hero-btn .solid {
+            background-color: #406054;
+            color: #fff;
+            border: none;
+        }
+    }
+}

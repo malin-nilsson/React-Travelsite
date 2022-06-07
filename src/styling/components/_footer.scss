@@ -1,0 +1,85 @@
+@use "../core/mixins";
+
+footer {
+    background-color: #202020;
+    color: #fff;
+    padding: 100px 70px;
+
+    .nav-footer-wrapper {
+        width: 90%;
+        margin: 0 auto;
+        @include mixins.flex(row, space-between, flex-start, 0px);
+
+        ul {
+            padding: 15px 0px;
+        }
+
+        .nav-footer-header {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 0.8rem;
+
+        }
+
+        li {
+            padding: 2px 0px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .nav-footer-contact {
+            @include mixins.flex(column, flex-start, flex-start, 25px);
+
+            p {
+                font-size: 0.9rem;
+
+                span {
+                    display: block;
+                    padding: 2px 0px;
+                    margin: 0px;
+                }
+            }
+
+            .nav-footer-logo {
+                font-family: 'DM Serif Display', serif;
+                font-size: 1.2rem;
+                cursor: default;
+            }
+
+            .nav-footer-icons {
+                @include mixins.flex(row, center, center, 17px);
+            }
+
+            .nav-footer-icon {
+                background-color: #202020;
+                color: #fff;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                display: inline-block;
+                height: 20px;
+                width: 20px;
+                padding: 10px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                img {
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+        }
+
+        .nav-footer-link {
+            text-decoration: none;
+            padding: 5px 0px;
+
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+}

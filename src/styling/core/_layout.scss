@@ -1,0 +1,54 @@
+.layout-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.pages-container {
+    height: 100vh;
+    width: 100vw;
+    padding: 100px 0px 0px;
+}
+
+.pages-container.experiences {
+    background-image: url("../../../public/images/hotel-view.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.pages-container.estates {
+    background-image: url("../../../public/images/castle.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.pages-container.about {
+    background-image: url("../../../public/images/about.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.pages-container.destinations {
+    background-image: url("../../../public/images/beach.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.pages-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 0px;
+}
