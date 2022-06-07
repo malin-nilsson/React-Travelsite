@@ -58,9 +58,10 @@
     }
 
     .hero-btns {
-        @include mixins.flex(row, flex-start, center, 15px);
+        @include mixins.flex(column, center, center, 15px);
 
         @include mixins.desktop-and-up {
+            @include mixins.flex(row, flex-start, center, 15px);
             padding: 0px 0px 0px 130px;
         }
 

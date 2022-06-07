@@ -1,92 +1,123 @@
 @use "../core/mixins";
 
 .intro-container {
-    @include mixins.flex(row, center, flex-start, 70px);
-    padding: 80px 0px;
-    width: 80%;
+    @include mixins.flex(column, center, flex-start, 70px);
+    padding: 20px 0px;
+    width: 95%;
     margin: 0 auto;
-}
 
-.intro-text {
-    @include mixins.flex(column, flex-start, flex-start, 0px);
-    width: 45%;
-    line-height: 3.4rem;
-
-    .preamble {
-        color: #406054;
-        margin: 0px;
-        padding: 0px;
-        font-size: 3rem;
-        font-family: 'DM Serif Display', serif;
+    @include mixins.desktop-and-up {
+        @include mixins.flex(row, center, flex-start, 70px);
+        padding: 80px 0px;
+        width: 80%;
     }
 
-    .hover-underline-animation {
-        display: inline-block;
-        margin: 30px 0px;
-        position: relative;
-        color: #406054;
-        font-weight: 600;
-        font-size: 1.1rem;
-        text-transform: uppercase;
-        text-decoration: none;
-    }
 
-    .hover-underline-animation:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #406054;
-        transform-origin: bottom right;
-        transition: transform 0.2s ease-out;
-    }
+    .intro-text {
+        @include mixins.flex(column, flex-start, flex-start, 0px);
+        width: 90%;
+        margin: 0 auto;
+        line-height: 3.4rem;
+        padding: 100px 0px 0px;
 
-    .hover-underline-animation:hover:after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
-}
+        @include mixins.desktop-and-up {
+            width: 45%;
+            padding: 0px;
 
-.intro-image {
-    width: 50%;
-    position: relative;
+        }
 
-    .intro-image-top {
-        background-image: url("../../../public/images/mountains.jpg");
-        background-position: center;
-        background-size: cover;
-        height: 600px;
-        width: auto;
-        z-index: 2;
+        .preamble {
+            color: #406054;
+            margin: 0px;
+            padding: 0px;
+            font-size: 3rem;
+            font-family: 'DM Serif Display', serif;
+        }
 
-        img {
+        .body-text-container {
+            padding: 30px 0px;
+
+            button {
+                @include mixins.btn();
+                margin: 30px 0px;
+            }
+
+            .body-text {
+                font-size: 1.1rem;
+                line-height: 1.5rem;
+                padding: 8px 0px;
+            }
+        }
+
+        .hover-underline-animation {
+            display: inline-block;
+            margin: 30px 0px;
+            position: relative;
+            color: #406054;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .hover-underline-animation:after {
+            content: '';
             position: absolute;
-            bottom: -260px;
-            left: 400px;
-            z-index: -2;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #406054;
+            transform-origin: bottom right;
+            transition: transform 0.2s ease-out;
+        }
+
+        .hover-underline-animation:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
         }
     }
 
-    img {
+    .intro-image {
         width: 100%;
-        height: auto;
+        position: relative;
+
+        @include mixins.desktop-and-up {
+            width: 50%;
+        }
+
+        .intro-image-top {
+            background-image: url("../../../public/images/mountains.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 600px;
+            width: auto;
+            z-index: 2;
+
+            img {
+                position: relative;
+                bottom: -450px;
+                left: 90px;
+                z-index: 10;
+
+                @include mixins.desktop-and-up {
+                    position: absolute;
+                    bottom: -260px;
+                    left: 400px;
+                    z-index: -2;
+                }
+            }
+        }
+
+        img {
+            width: 70%;
+            height: auto;
+
+            @include mixins.desktop-and-up {
+                width: 100%;
+                height: auto;
+            }
+        }
     }
-}
-
-.body-text-container {
-    padding: 30px 0px;
-
-    button {
-        @include mixins.btn();
-        margin: 30px 0px;
-    }
-}
-
-.body-text {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-    padding: 8px 0px;
 }
