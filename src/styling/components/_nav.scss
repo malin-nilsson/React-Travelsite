@@ -13,9 +13,14 @@ nav {
 
     a {
         color: #000;
+        padding: 3px 0px;
+
+
 
         &:hover {
             color: #000;
+            transition: all 0.05s ease-in-out;
+            border-bottom: 1px solid #000;
         }
     }
 
