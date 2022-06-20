@@ -51,43 +51,31 @@ nav {
     }
 
     ul {
-        @include mixins.flex(column, flex-start, flex-start, 20px);
+        @include mixins.flex(column, flex-start, flex-start, 10px);
 
         @include mixins.desktop-and-up {
             @include mixins.flex(row, space-between, center, 35px);
         }
 
-        li {
-            font-size: 1.1rem;
+        a {
             text-transform: uppercase;
             font-weight: 500;
-
-            @include mixins.desktop-and-up {
-                font-size: 0.8rem;
-            }
-        }
-
-        a {
             color: #fff;
             padding: 3px 0px;
-
-            &:hover {
-                color: #000;
-                transition: all 0.05s ease-in-out;
-                border-bottom: 1px solid #000;
-            }
+            font-size: 1rem;
 
             @include mixins.desktop-and-up {
                 color: #000;
+                font-size: 0.85rem;
             }
         }
 
-        .nav-item a:hover {
-            color: #fff;
-
-            @include mixins.desktop-and-up {
-                color: #000;
-            }
+        .hover-effect {
+            @include mixins.underline-animation;
+            font-weight: 500;
+            font-size: 0.8rem;
+            padding: 0px 0px 3px;
+            margin: 0px;
         }
 
         .btn-outline {
@@ -104,13 +92,7 @@ nav {
         }
     }
 
-    .underline {
-        border-bottom: 1px solid #fff;
 
-        @include mixins.desktop-and-up {
-            border-bottom: 1px solid #000;
-        }
-    }
 
     .navbar-icons {
         @include mixins.flex(row, center, center, 10px);

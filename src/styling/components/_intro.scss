@@ -18,12 +18,11 @@
         width: 90%;
         margin: 0 auto;
         line-height: 3.4rem;
-        padding: 100px 0px 0px;
+        padding: 70px 0px 0px;
 
         @include mixins.desktop-and-up {
             width: 45%;
             padding: 0px;
-
         }
 
         .preamble {
@@ -49,33 +48,8 @@
             }
         }
 
-        .hover-underline-animation {
-            display: inline-block;
-            margin: 30px 0px;
-            position: relative;
-            color: #406054;
-            font-weight: 600;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            text-decoration: none;
-        }
-
-        .hover-underline-animation:after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            transform: scaleX(0);
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: #406054;
-            transform-origin: bottom right;
-            transition: transform 0.2s ease-out;
-        }
-
-        .hover-underline-animation:hover:after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
+        .hover-effect {
+            @include mixins.underline-animation;
         }
     }
 
@@ -97,7 +71,7 @@
 
             img {
                 position: relative;
-                bottom: -450px;
+                bottom: -490px;
                 left: 90px;
                 z-index: 10;
 

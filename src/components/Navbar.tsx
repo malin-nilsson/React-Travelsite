@@ -15,25 +15,25 @@ export default function Navbar() {
                     </header>
 
                     <ul>
-                        <li className="nav-item">
+                        <li className="nav-item hover-effect">
                             <NavLink to="/destinations"
                                 className={({ isActive }) => isActive ? "underline" : ""}>
                                 Destinations
                             </NavLink>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item hover-effect">
                             <NavLink to="/experiences"
                                 className={({ isActive }) => isActive ? "underline" : ""}>
                                 Tailored Experiences
                             </NavLink>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item hover-effect">
                             <NavLink to="/rentals"
                                 className={({ isActive }) => isActive ? "underline" : ""}>
                                 Private Rentals
                             </NavLink>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item hover-effect">
                             <NavLink to="/about"
                                 className={({ isActive }) => isActive ? "underline" : ""}>
                                 About us

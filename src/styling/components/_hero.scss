@@ -11,7 +11,7 @@
     }
 
     h2 {
-        padding: 120px 0px 0px;
+        padding: 70px 0px 0px;
         text-align: center;
         font-size: 2.3rem;
         font-weight: 700;
@@ -19,7 +19,6 @@
         font-family: 'DM Serif Display', serif;
 
         @include mixins.desktop-and-up {
-            padding: 150px 0px 0px 130px;
             font-size: 3.5rem;
             text-transform: uppercase;
         }
@@ -53,7 +52,8 @@
         margin: 0 auto;
 
         @include mixins.desktop-and-up {
-            @include mixins.flex(column, center, flex-start, 5px);
+            @include mixins.flex(column, center, center, 15px);
+            padding: 100px 0px 0px;
         }
     }
 
@@ -61,15 +61,19 @@
         @include mixins.flex(column, center, center, 15px);
 
         @include mixins.desktop-and-up {
-            @include mixins.flex(row, flex-start, center, 15px);
-            padding: 0px 0px 0px 130px;
+            @include mixins.flex(row, flex-start, center, 23px);
         }
 
         .hero-btn {
             button {
                 @include mixins.btn();
-                background-color: transparent;
-                border: 1px solid #000;
+                @include mixins.flex(row, center, center, 0px);
+            }
+
+
+            svg {
+                margin-left: 10px;
+                display: flex;
             }
         }
 

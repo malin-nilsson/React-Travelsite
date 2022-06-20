@@ -30,7 +30,7 @@ export default function Intro() {
                             accusamus aliquid vitae ad quibusdam illum
                             ducimus.</p>
 
-                        <Link to="/destinations" className="hover-underline-animation">Explore our destinations</Link>
+                        <Link to="/destinations" className="hover-effect">Explore our destinations</Link>
                     </div>
                 </div>
             </div>
