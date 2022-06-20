@@ -28,6 +28,8 @@ nav {
             a {
                 text-decoration: none;
                 color: #fff;
+                display: flex;
+                align-items: center;
 
                 @include mixins.desktop-and-up {
                     color: #000;
@@ -45,6 +47,7 @@ nav {
 
                 @include mixins.desktop-and-up {
                     color: #000;
+                    margin-left: 5px;
                 }
             }
         }

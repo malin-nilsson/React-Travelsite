@@ -7,11 +7,12 @@ export default function Navbar() {
             <nav>
                 <div className="nav-container">
                     <header>
-
                         <h1>
-                            <NavLink to="/">TRVL</NavLink>
+                            <NavLink to="/">
+                                TRVL
+                                <i className='fab fa-typo3' />
+                            </NavLink>
                         </h1>
-                        <i className='fab fa-typo3' />
                     </header>
 
                     <ul>
@@ -41,7 +42,6 @@ export default function Navbar() {
                         </li>
 
                     </ul>
-
                     <div className="navbar-icons">
                         <div className="navbar-icon">
                             <img src="/images/search.svg" alt="" />
