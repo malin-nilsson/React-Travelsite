@@ -5,9 +5,11 @@ export default function Intro() {
     return (
         <>
             <div className="intro-container">
-                <div className="intro-image">
-                    <div className="intro-image-top">
-                        <img src="/images/elephants.jpg" alt="" />
+                <div className="collage">
+                    <div className="top-image">
+                        <img src="/images/elephants.jpg"
+                            alt="Elephants at sunset"
+                            className="bottom-image" />
                     </div>
                 </div>
 

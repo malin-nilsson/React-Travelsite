@@ -53,7 +53,7 @@
         }
     }
 
-    .intro-image {
+    .collage {
         width: 100%;
         position: relative;
 
@@ -61,7 +61,7 @@
             width: 50%;
         }
 
-        .intro-image-top {
+        .top-image {
             background-image: url("../../../public/images/mountains.jpg");
             background-position: center;
             background-size: cover;
@@ -69,28 +69,22 @@
             width: auto;
             z-index: 2;
 
-            img {
+            .bottom-image {
                 position: relative;
                 bottom: -490px;
                 left: 90px;
                 z-index: 10;
+                width: 70%;
+                height: auto;
 
                 @include mixins.desktop-and-up {
                     position: absolute;
                     bottom: -260px;
                     left: 400px;
                     z-index: -2;
+                    width: 100%;
+                    height: auto;
                 }
-            }
-        }
-
-        img {
-            width: 70%;
-            height: auto;
-
-            @include mixins.desktop-and-up {
-                width: 100%;
-                height: auto;
             }
         }
     }
