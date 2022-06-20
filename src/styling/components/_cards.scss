@@ -41,6 +41,10 @@
             width: 100%;
             position: relative;
             cursor: pointer;
+
+            &:hover {
+                opacity: 0.9;
+            }
         }
 
         .cards-item.voyage {
