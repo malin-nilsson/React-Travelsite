@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="hero-container">
 
       <div className="video-container">
-        <video src="/videos/hero-video.mp4" className="video-bg" autoPlay loop muted></video>
+        <video src="/videos/hero-video.mov" className="video-bg" autoPlay loop muted></video>
       </div>
 
       <div className="hero-text"><h2>Adventure awaits</h2>
