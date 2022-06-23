@@ -42,24 +42,28 @@ export default function Navbar() {
                         className={isActive ? "mobile-menu" : ""}>
                         <li className="nav-item hover-effect">
                             <NavLink to="/destinations"
+                                onClick={() => isActive ? toggleMobileMenu() : ""}
                                 className={({ isActive }) => isActive ? "underline" : ""}>
                                 Destinations
                             </NavLink>
                         </li>
                         <li className="nav-item hover-effect">
                             <NavLink to="/experiences"
+                                onClick={() => isActive ? toggleMobileMenu() : ""}
                                 className={({ isActive }) => isActive ? "underline" : ""}>
                                 Tailored Experiences
                             </NavLink>
                         </li>
                         <li className="nav-item hover-effect">
                             <NavLink to="/rentals"
+                                onClick={() => isActive ? toggleMobileMenu() : ""}
                                 className={({ isActive }) => isActive ? "underline" : ""}>
                                 Private Rentals
                             </NavLink>
                         </li>
                         <li className="nav-item hover-effect">
                             <NavLink to="/about"
+                                onClick={() => isActive ? toggleMobileMenu() : ""}
                                 className={({ isActive }) => isActive ? "underline" : ""}>
                                 About us
                             </NavLink>

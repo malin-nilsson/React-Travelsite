@@ -97,8 +97,7 @@ nav {
             @include mixins.underline-animation;
             font-weight: 500;
             font-size: 0.8rem;
-            padding: 0px 0px 3px;
-            margin: 0px;
+            padding: 0px 0px 5px;
         }
 
         .btn-outline {
@@ -116,6 +115,9 @@ nav {
     }
 
 
+    .underline {
+        border-bottom: 2px solid #406054;
+    }
 
     .navbar-icons {
         @include mixins.flex(row, flex-end, center, 10px);
@@ -129,16 +131,27 @@ nav {
             @include mixins.flex(row, center, center, 0px);
             background-color: #406054;
             border-radius: 50%;
-            height: 25px;
-            width: 25px;
+            height: 20px;
+            width: 20px;
             padding: 10px;
 
+            @include mixins.desktop-and-up {
+                height: 25px;
+                width: 25px;
+            }
+
             img {
-                height: 19px;
-                width: 19px;
+                height: 15px;
+                width: 15px;
 
                 &:hover {
                     cursor: pointer;
+                }
+
+
+                @include mixins.desktop-and-up {
+                    height: 19px;
+                    width: 19px;
                 }
             }
         }
