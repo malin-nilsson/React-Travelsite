@@ -20,6 +20,12 @@ nav {
         @include mixins.desktop-and-up {
             @include mixins.flex(row, space-between, center, 0px);
             padding: 10px 20px;
+            background-color: transparent;
+            transition: background-color 0.3s ease-in-out;
+
+            &:hover {
+                background-color: rgba(255, 251, 248, 0.8);
+            }
         }
 
         header {
@@ -77,7 +83,7 @@ nav {
         display: none;
 
         @include mixins.desktop-and-up {
-            @include mixins.flex(row, space-between, center, 35px);
+            @include mixins.flex(row, space-between, center, 40px);
         }
 
         a {
