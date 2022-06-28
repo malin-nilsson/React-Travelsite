@@ -141,6 +141,10 @@ nav {
             width: 20px;
             padding: 10px;
 
+            &:hover {
+                cursor: pointer;
+            }
+
             @include mixins.desktop-and-up {
                 height: 25px;
                 width: 25px;
@@ -150,9 +154,7 @@ nav {
                 height: 15px;
                 width: 15px;
 
-                &:hover {
-                    cursor: pointer;
-                }
+
 
 
                 @include mixins.desktop-and-up {
