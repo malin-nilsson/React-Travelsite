@@ -1,3 +1,5 @@
+@use "../core/mixins";
+
 .layout-container {
     height: 100vh;
     width: 100vw;
@@ -7,6 +9,20 @@
     height: 100vh;
     width: 100vw;
     padding: 100px 0px 0px;
+    margin: 0 auto;
+
+    .button-container {
+        @include mixins.flex(column, center, center, 0px);
+    }
+
+    button {
+        @include mixins.btn();
+        background-color: #406054;
+        color: #fff;
+        border: none;
+        margin: 20px 0px;
+
+    }
 }
 
 .pages-container.experiences {
@@ -39,6 +55,11 @@
     background-size: cover;
     height: 100vh;
     width: 100vw;
+}
+
+.pages-content.not-found {
+    padding: 0px;
+    font-size: 2rem;
 }
 
 .pages-content {
