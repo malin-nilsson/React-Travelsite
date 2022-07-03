@@ -6,12 +6,15 @@
     width: 95%;
     margin: 0 auto;
 
+    @include mixins.tablet-and-up {
+        @include mixins.flex(column-reverse, center, flex-start, 70px);
+    }
+
     @include mixins.desktop-and-up {
         @include mixins.flex(row, center, flex-start, 70px);
         padding: 80px 0px;
         width: 80%;
     }
-
 
     .intro-text {
         @include mixins.flex(column, flex-start, flex-start, 0px);
@@ -69,6 +72,15 @@
             width: auto;
             z-index: 2;
 
+            @include mixins.tablet-and-up {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            @include mixins.desktop-and-up {
+                width: auto;
+            }
+
             .bottom-image {
                 position: relative;
                 bottom: -490px;
@@ -76,6 +88,13 @@
                 z-index: 10;
                 width: 70%;
                 height: auto;
+
+                @include mixins.tablet-and-up {
+                    position: absolute;
+                    bottom: -280px;
+                    left: 210px;
+                    z-index: 10;
+                }
 
                 @include mixins.desktop-and-up {
                     position: absolute;
