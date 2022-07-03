@@ -2,12 +2,13 @@
 
 .intro-container {
     @include mixins.flex(column, center, flex-start, 70px);
-    padding: 20px 0px;
+    padding: 150px 0px 20px;
     width: 95%;
     margin: 0 auto;
 
     @include mixins.tablet-and-up {
         @include mixins.flex(column-reverse, center, flex-start, 70px);
+        padding: 10px 0px 20px;
     }
 
     @include mixins.desktop-and-up {

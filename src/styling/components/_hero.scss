@@ -22,6 +22,10 @@
         color: #000;
         font-family: 'DM Serif Display', serif;
 
+        @include mixins.tablet-and-up {
+            font-size: 2.9rem;
+        }
+
         @include mixins.desktop-and-up {
             font-size: 3.5rem;
             text-transform: uppercase;
