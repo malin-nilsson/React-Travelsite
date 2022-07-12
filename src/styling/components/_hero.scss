@@ -66,7 +66,7 @@
 
         @include mixins.desktop-and-up {
             @include mixins.flex(column, center, center, 15px);
-            padding: 100px 0px 0px;
+            padding: 120px 0px 0px;
         }
     }
 
