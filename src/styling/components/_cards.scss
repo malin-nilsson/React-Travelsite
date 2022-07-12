@@ -52,6 +52,8 @@
             width: 100%;
             position: relative;
             cursor: pointer;
+            opacity: 1;
+            transition: opacity 0.2s ease-in-out;
 
             &:hover {
                 opacity: 0.9;

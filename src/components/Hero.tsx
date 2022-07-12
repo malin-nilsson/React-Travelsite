@@ -9,7 +9,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ opacity: 0.2 }}
+        transition={{ opacity: 0.5 }}
         className="hero-container">
 
         <div className="video-container">

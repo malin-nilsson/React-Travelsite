@@ -25,7 +25,7 @@ export default function Layout() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        transition={{ opacity: 0.3 }}
+                        transition={{ opacity: 0.7 }}
                         className="layout-container">
                         <Navbar />
                         <main>
