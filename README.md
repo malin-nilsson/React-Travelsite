@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+# React Travel Website 🌍
+React website using TypeScript, Sass, React Hooks and React Router.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
+1. Clone the repo\
+`git clone https://github.com/malin-nilsson/React-Travel-Website`
+
+2. Install npm packages\
+`npm install`
+
+3. Run React\
+`npm start`
+
+## Author
+- GitHub - [malin-nilsson](https://github.com/malin-nilsson)
 
 ## Available Scripts
 
