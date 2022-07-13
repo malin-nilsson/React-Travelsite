@@ -1,6 +1,8 @@
 # React Travel Website 🌍
 React website using TypeScript, Sass, React Hooks and React Router.
 
+Live site url: [https://trvl-agency.netlify.app/](https://trvl-agency.netlify.app/)
+
 ## Installation
 1. Clone the repo\
 `git clone https://github.com/malin-nilsson/React-Travel-Website`
