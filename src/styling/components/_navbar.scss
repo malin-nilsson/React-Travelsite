@@ -32,7 +32,6 @@ nav {
             @include mixins.flex(row, space-between, align, 0px);
             width: 100%;
 
-
             @include mixins.desktop-and-up {
                 display: inline;
                 width: unset;
@@ -120,7 +119,6 @@ nav {
         }
     }
 
-
     .underline {
         border-bottom: 2px solid #406054;
     }
@@ -153,9 +151,6 @@ nav {
             img {
                 height: 15px;
                 width: 15px;
-
-
-
 
                 @include mixins.desktop-and-up {
                     height: 19px;
