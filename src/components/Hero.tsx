@@ -14,7 +14,9 @@ export default function Hero() {
 
         <div className="video-container">
           <video
-            src="/videos/hero-video.mov" className="video-bg" autoPlay loop muted>
+            poster="/images/hero-poster.jpg"
+            autoPlay loop muted>
+            <source src="/videos/hero-video.mp4" className="video-bg" />
           </video>
         </div>
 
