@@ -96,6 +96,9 @@ export default function Footer() {
                     </div>
                 </section>
             </div>
+            <p className="author">Malin Nilsson, 2022 - <a href="https://github.com/malin-nilsson"
+                target="_blank"
+                rel="noreferrer">Github</a></p>
         </footer>
     )
 }
