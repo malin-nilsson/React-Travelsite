@@ -8,21 +8,24 @@ import NotFound from './components/NotFound';
 import Destinations from './components/pages/Destinations';
 import PrivateRentals from './components/pages/PrivateRentals';
 import Experiences from './components/pages/Experiences';
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/experiences" element={<Experiences />} />
-          <Route path="/destinations" element={<Destinations />} />
-          <Route path="/rentals" element={<PrivateRentals />} />
-          <Route path="*" element={<NotFound />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <AnimatePresence>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/experiences" element={<Experiences />} />
+            <Route path="/destinations" element={<Destinations />} />
+            <Route path="/rentals" element={<PrivateRentals />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </AnimatePresence>
 
   );
 }

@@ -20,20 +20,17 @@ export default function Layout() {
         <>
             {loading ? <StyledLoader>
             </StyledLoader> :
-                <AnimatePresence>
-                    <motion.div
+                <div>
+                    <Navbar />
+                    <motion.main
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        transition={{ opacity: 0.7 }}
-                        className="layout-container">
-                        <Navbar />
-                        <main>
-                            <Outlet></Outlet>
-                        </main>
-                        <Footer />
-                    </motion.div>
-                </AnimatePresence>
+                        transition={{ duration: 0.3 }}>
+                        <Outlet></Outlet>
+                    </motion.main>
+                    <Footer />
+                </div>
             }
         </>
     );
