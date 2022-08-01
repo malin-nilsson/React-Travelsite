@@ -1,5 +1,4 @@
-import { AnimatePresence, motion } from 'framer-motion'
-import React from 'react'
+import { motion } from 'framer-motion'
 
 export default function Hero() {
   return (
@@ -7,7 +6,7 @@ export default function Hero() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.4 }}
       className="hero-container">
       <div className="video-container">
         <video
@@ -36,6 +35,5 @@ export default function Hero() {
         </div>
       </div>
     </motion.section>
-
   )
 }

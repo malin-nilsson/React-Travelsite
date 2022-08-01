@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import React from 'react'
 
 export default function About() {
     window.scrollTo(0, 0);

@@ -28,6 +28,7 @@ nav {
             }
         }
 
+        /* HEADER LOGO */
         header {
             @include mixins.flex(row, space-between, align, 0px);
             width: 100%;
@@ -37,33 +38,19 @@ nav {
                 width: unset;
             }
 
-            #mobile-menu-icon {
-                display: inline;
-                cursor: pointer;
-
-                @include mixins.desktop-and-up {
-                    display: none;
-                }
-            }
-
-            .mobile-menu {
-                @include mixins.flex(column, flex-start, center, 15px);
+            h1 {
+                font-size: 1.9rem;
+                font-family: 'DM Serif Display', serif;
             }
 
             a {
                 text-decoration: none;
                 color: #fff;
-                display: flex;
-                align-items: center;
+                @include mixins.flex(row, center, center, 0px);
 
                 @include mixins.desktop-and-up {
                     color: #000;
                 }
-            }
-
-            h1 {
-                font-size: 1.9rem;
-                font-family: 'DM Serif Display', serif;
             }
 
             .fa-typo3 {
@@ -76,85 +63,110 @@ nav {
                 }
             }
         }
-    }
 
-    ul {
-        display: none;
-
-        @include mixins.desktop-and-up {
-            @include mixins.flex(row, space-between, center, 40px);
-        }
-
-        a {
-            text-transform: uppercase;
-            font-weight: 500;
-            color: #fff;
-            padding: 3px 0px;
-            font-size: 1rem;
+        /* NAVBAR */
+        ul {
+            display: none;
 
             @include mixins.desktop-and-up {
-                color: #000;
-                font-size: 0.85rem;
-            }
-        }
-
-        .hover-effect {
-            @include mixins.underline-animation;
-            font-weight: 500;
-            font-size: 0.8rem;
-            padding: 0px 0px 5px;
-        }
-
-        .btn-outline {
-            cursor: pointer;
-            border: 2px solid #000;
-            padding: 8px 10px;
-            text-transform: uppercase;
-            transition: all 0.25s ease-in-out;
-
-            &:hover {
-                background-color: #fff;
-
-            }
-        }
-    }
-
-    .underline {
-        border-bottom: 2px solid #406054;
-    }
-
-    .navbar-icons {
-        @include mixins.flex(row, flex-end, center, 10px);
-        width: 100%;
-
-        @include mixins.desktop-and-up {
-            width: unset;
-        }
-
-        .navbar-icon {
-            @include mixins.flex(row, center, center, 0px);
-            background-color: #406054;
-            border-radius: 50%;
-            height: 20px;
-            width: 20px;
-            padding: 10px;
-
-            &:hover {
-                cursor: pointer;
+                @include mixins.flex(row, space-between, center, 40px);
             }
 
-            @include mixins.desktop-and-up {
-                height: 25px;
-                width: 25px;
+            li {
+                margin: 3px 0px;
+
+                @include mixins.tablet-and-up {
+                    margin: 5px 0px;
+                }
             }
 
-            img {
-                height: 15px;
-                width: 15px;
+            a {
+                text-transform: uppercase;
+                font-weight: 500;
+                color: #fff;
+                padding: 3px 0px;
+                font-size: 1.1rem;
 
                 @include mixins.desktop-and-up {
-                    height: 19px;
-                    width: 19px;
+                    color: #000;
+                    font-size: 0.85rem;
+                }
+            }
+
+            /* UNDERLINE ANIMATION */
+            .hover-effect {
+                @include mixins.underline-animation;
+                font-weight: 500;
+                font-size: 0.8rem;
+                padding: 0px 0px 5px;
+            }
+
+            .btn-outline {
+                cursor: pointer;
+                border: 2px solid #000;
+                padding: 8px 10px;
+                text-transform: uppercase;
+                transition: all 0.25s ease-in-out;
+
+                &:hover {
+                    background-color: #fff;
+
+                }
+            }
+        }
+
+        /* MOBILE NAVBAR */
+        #mobile-menu-icon {
+            display: inline;
+            cursor: pointer;
+
+            @include mixins.desktop-and-up {
+                display: none;
+            }
+        }
+
+        .mobile-menu {
+            @include mixins.flex(column, flex-start, flex-start, 15px);
+        }
+
+        .underline {
+            border-bottom: 2px solid #406054;
+        }
+
+        /* NAVBAR ICONS */
+        .navbar-icons {
+            @include mixins.flex(row, flex-end, center, 10px);
+            width: 100%;
+
+            @include mixins.desktop-and-up {
+                width: unset;
+            }
+
+            .navbar-icon {
+                @include mixins.flex(row, center, center, 0px);
+                background-color: #406054;
+                border-radius: 50%;
+                height: 20px;
+                width: 20px;
+                padding: 10px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                @include mixins.desktop-and-up {
+                    height: 25px;
+                    width: 25px;
+                }
+
+                img {
+                    height: 15px;
+                    width: 15px;
+
+                    @include mixins.desktop-and-up {
+                        height: 19px;
+                        width: 19px;
+                    }
                 }
             }
         }
