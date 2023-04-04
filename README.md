@@ -1,7 +1,7 @@
 # React Travelsite 
 React site I created to practice working with Styled components, React Router and React in general.
 
-Live url: [https://trvl-agency.netlify.app/](https://trvl-agency.netlify.app/)
+[https://trvl-agency.netlify.app/](https://trvl-agency.netlify.app/)
 
 ![](./public/images/screenshot.jpg)
 
